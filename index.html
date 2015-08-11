@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Form Validation Project</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+			<p class="altert alert-warning header-warn">All fiels marked with * is required....</p>
+                <form action="#" name="form" onsubmit="return validate()">
+                    <div class="form-group">
+                        <label for="username">Username</label><sup class="required">*</sup>
+                        <input type="text" name="username" class="form-control" id="nameField">
+						<span id="msg-user"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label><sup class="required">*</sup>
+                        <input type="password" name="password" class="form-control" id="password">
+                        <span id="msg-pass" class="control-label"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="con-pass">Confirm Password</label><sup class="required">*</sup>
+                        <input type="password" name="conpass" class="form-control" id="con-pass">
+                        <span id="msg-conpass" class="control-label"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="fname">First Name</label><sup class="required">*</sup>
+                        <input type="text" name="fname" class="form-control" id="firstName">
+                        <span id="msg-fname" class="control-label"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label><sup class="required">*</sup>
+                        <input type="text" name="lname" class="form-control" id="lastName">
+                        <span id="msg-lname" class="control-label"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Email</label><sup class="required">*</sup>
+                        <input type="email" name="mail" class="form-control" id="email">
+                        <span id="msg-mail" class="control-label"></span>
+                    </div>
+                    <button type="submit" class="btn btn-default" id="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
